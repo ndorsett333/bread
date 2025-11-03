@@ -1,3 +1,22 @@
+/* FONT FACE DECLARATIONS START */
+@font-face {
+    font-family: 'Candice Original Fixed';
+    src: url('candiceoriginalfixed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* FONT FACE DECLARATIONS END */
+
+/* COLOR VARIABLES START */
+:root {
+    --orchid-pink: #febfdaff;    /* Primary color */
+    --persian-pink: #fa86c4ff;   /* Secondary color */
+    --space-cadet: #2d3047ff;    /* Dark accent */
+    --alice-blue: #d8e5f7ff;     /* Light accent */
+    --seashell: #f7eee9ff;       /* Neutral light */
+}
+/* COLOR VARIABLES END */
+
 /* RESET STYLES START */
 * {
     margin: 0;
@@ -10,26 +29,26 @@
 body {
     font-family: 'Golos Text', Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--space-cadet);
     font-weight: 400;
 }
 /* BASE STYLES END */
 
 /* TYPOGRAPHY IMPROVEMENTS START */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Aboreto', Arial, Helvetica, sans-serif;
+    font-family: 'Candice Original Fixed', Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: -0.02em;
 }
 
 .hero-text h1 {
-    font-family: 'Aboreto', Arial, Helvetica, sans-serif;
+    font-family: 'Candice Original Fixed', Arial, Helvetica, sans-serif;
     font-weight: 700;
     letter-spacing: -0.03em;
 }
 
 .logo {
-    font-family: 'Aboreto', Arial, Helvetica, sans-serif;
+    font-family: 'Candice Original Fixed', Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: -0.01em;
 }
@@ -37,25 +56,25 @@ h1, h2, h3, h4, h5, h6 {
 .service-card h3,
 .split-content h3,
 .product-name {
-    font-family: 'Aboreto', Arial, Helvetica, sans-serif;
+    font-family: 'Candice Original Fixed', Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: -0.01em;
 }
 
 .section-title {
-    font-family: 'Aboreto', Arial, Helvetica, sans-serif;
+    font-family: 'Candice Original Fixed', Arial, Helvetica, sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
 }
 
 .newsletter h2 {
-    font-family: 'Aboreto', Arial, Helvetica, sans-serif;
+    font-family: 'Candice Original Fixed', Arial, Helvetica, sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
 }
 
 .footer-section h4 {
-    font-family: 'Aboreto', Arial, Helvetica, sans-serif;
+    font-family: 'Candice Original Fixed', Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: 0.01em;
 }
@@ -98,7 +117,7 @@ p {
 
 /* HEADER STYLES START */
 .header {
-    background-color: #2c3e32;
+    background-color: var(--space-cadet);
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -141,7 +160,7 @@ p {
 }
 
 .nav-links a:hover {
-    color: #8fbc8f;
+    color: var(--orchid-pink);
 }
 
 .hamburger {
@@ -161,8 +180,8 @@ p {
 
 /* HERO SECTION START */
 .hero {
-    background: linear-gradient(135deg, #2c3e32 0%, #4a6741 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--alice-blue) 0%, var(--orchid-pink) 100%);
+    color: var(--space-cadet);
     padding: 8rem 2rem 4rem;
     min-height: 100vh;
     display: flex;
@@ -193,8 +212,8 @@ p {
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: #8fbc8f;
-    color: #2c3e32;
+    background-color: var(--orchid-pink);
+    color: var(--space-cadet);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -202,7 +221,7 @@ p {
 }
 
 .btn:hover {
-    background-color: #7aa67a;
+    background-color: var(--persian-pink);
     transform: translateY(-2px);
 }
 
@@ -220,7 +239,7 @@ p {
 /* SERVICES SECTION START */
 .services {
     padding: 6rem 2rem;
-    background-color: #f8f8f8;
+    background-color: var(--seashell);
 }
 
 .services-container {
@@ -249,18 +268,18 @@ p {
 }
 
 .service-card:nth-child(1) {
-    background: linear-gradient(135deg, #8fbc8f, #7aa67a);
-    color: white;
+    background: linear-gradient(135deg, var(--orchid-pink), var(--persian-pink));
+    color: var(--space-cadet);
 }
 
 .service-card:nth-child(2) {
-    background: linear-gradient(135deg, #cd853f, #b8860b);
-    color: white;
+    background: linear-gradient(135deg, var(--persian-pink), var(--orchid-pink));
+    color: var(--space-cadet);
 }
 
 .service-card:nth-child(3) {
-    background: linear-gradient(135deg, #f4a460, #daa520);
-    color: white;
+    background: linear-gradient(135deg, var(--alice-blue), var(--orchid-pink));
+    color: var(--space-cadet);
 }
 
 .service-icon {
@@ -289,7 +308,7 @@ p {
 /* GALLERY SECTION START */
 .gallery {
     padding: 4rem 2rem;
-    background: #2c3e32;
+    background: var(--space-cadet);
 }
 
 .gallery-grid {
@@ -302,7 +321,7 @@ p {
 
 .gallery-item {
     aspect-ratio: 1;
-    background: #4a6741;
+    background: var(--alice-blue);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -317,7 +336,7 @@ p {
 /* PRODUCTS SHOWCASE START */
 .products-showcase {
     padding: 6rem 2rem;
-    background: #f8f8f8;
+    background: var(--alice-blue);
 }
 
 .showcase-content {
@@ -332,12 +351,12 @@ p {
 .showcase-text h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #2c3e32;
+    color: var(--space-cadet);
 }
 
 .showcase-text p {
     margin-bottom: 2rem;
-    color: #666;
+    color: var(--space-cadet);
 }
 
 .showcase-images {
@@ -370,11 +389,11 @@ p {
 }
 
 .split-section:nth-child(1) {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), #8fbc8f;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), var(--orchid-pink);
 }
 
 .split-section:nth-child(2) {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), #cd853f;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), var(--persian-pink);
 }
 
 .split-content h3 {
@@ -393,12 +412,12 @@ p {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #2c3e32;
+    color: var(--space-cadet);
 }
 
 .section-subtitle {
     text-align: center;
-    color: #666;
+    color: var(--space-cadet);
     margin-bottom: 4rem;
 }
 
@@ -441,21 +460,21 @@ p {
 }
 
 .product-rating {
-    color: #ffd700;
+    color: var(--persian-pink);
     margin-bottom: 1rem;
 }
 
 .product-price {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #2c3e32;
+    color: var(--space-cadet);
     margin-bottom: 1rem;
 }
 /* PRODUCT CARDS END */
 
 /* NEWSLETTER START */
 .newsletter {
-    background: #2c3e32;
+    background: var(--space-cadet);
     color: white;
     padding: 6rem 2rem;
     text-align: center;
@@ -489,8 +508,8 @@ p {
 
 .newsletter-form button {
     padding: 1rem 2rem;
-    background: #8fbc8f;
-    color: #2c3e32;
+    background: var(--orchid-pink);
+    color: var(--space-cadet);
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -499,13 +518,13 @@ p {
 }
 
 .newsletter-form button:hover {
-    background: #7aa67a;
+    background: var(--persian-pink);
 }
 /* NEWSLETTER END */
 
 /* FOOTER START */
 .footer {
-    background: #1a2420;
+    background: #1a1a2e;
     color: white;
     padding: 3rem 2rem 1rem;
 }
@@ -520,7 +539,7 @@ p {
 
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: #8fbc8f;
+    color: var(--orchid-pink);
 }
 
 .footer-section ul {
@@ -538,7 +557,7 @@ p {
 }
 
 .footer-section ul li a:hover {
-    color: #8fbc8f;
+    color: var(--orchid-pink);
 }
 
 .footer-bottom {
@@ -559,7 +578,7 @@ p {
         left: 0;
         width: 100%;
         height: calc(100vh - 70px);
-        background: #2c3e32;
+        background: var(--space-cadet);
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
