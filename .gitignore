@@ -1,0 +1,7 @@
+# Exclude the imgs subdirectory
+img/imgs/
+
+# Optional: You might also want to exclude common files
+*.log
+.DS_Store
+Thumbs.db
